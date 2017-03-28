@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box; 
+}
+
+body {
+  background-color: #6e4d26;
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+}
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  font-family: Orbitron, sans-serif;
+}
+
+/* -- Grid -- */
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.col.box {
+  background: #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  border: 2px solid #aaa;
+  box-shadow: 2px 2px 5px #000;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding: 0 15px;
+  display: inline-block;
+}
+
+.col.md-1-4 {
+  width: 25%;
+}
+
+.col.md-2-4 {
+  width: 50%;
+}
+
+.col.off-1-4 {
+  margin-left: 25%;
+}
+
+.col > button {
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .col.sm-1-1 {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+
+/* Keys */
+.key {
+  border: none;
+  border-radius: 6px;
+  height: 2.5em;
+  background: linear-gradient(to bottom, #fff, #ddd);
+  box-shadow: 2px 2px 5px #aaa;
+  margin: 5px 0;
+}
+
+.key[value="="] {
+  height: calc(5em + 8px);
+  position: absolute;
+  width: calc(100% - 30px);
+}
+
+.screen {
+  color: #444;
+  font-size: 2em;
+  text-align: right;
+  border: 2px #ddd solid;
+  border-radius: 6px;
+  height: 3em;
+  background: linear-gradient(to bottom, #62A54B, #E5FD68);
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
